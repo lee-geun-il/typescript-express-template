@@ -77,6 +77,7 @@ app.listen(PORT, () => {
 ```
 
 STEP 6. `*.handlebars`를 작성합니다.
+
 `index.handlebars`
 ```handlebars
 <h1>Example App: Home</h1>
