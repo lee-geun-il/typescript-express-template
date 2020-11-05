@@ -6,7 +6,7 @@ STEP 1. Initialize a Node.js project.
 ```bash
 npm init
 ```
-package.json
+`package.json`
 ```json
 {
   "scripts": {
