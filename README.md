@@ -2,11 +2,11 @@
  This is a template for TypesSript and Express
 
 
-STEP 1. Initialize a Node.js project.
+STEP 1. Initialize a Node.js project and update `package.json`.
+
 ```bash
 npm init
 ```
-`package.json`
 ```json
 {
   "scripts": {
@@ -25,11 +25,10 @@ npm install express --save-prod
 npm install nodemon typescript ts-node @types/node @types/express --save-dev
 ```
 
-STEP 3. Initialize the TypeScript compiler.
+STEP 3. Initialize the TypeScript compiler and update `tsconfig.json`.
 ```bash
 tsc --init
 ```
-tsconfig.json
 ```json
 {
   "compilerOptions": {},
