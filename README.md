@@ -11,6 +11,71 @@ cd project-name
 npm start
 ```
 
+STEP 2. `App.tsx`를 수정합니다.
+```
+import React, { useEffect, useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App(this: any) {
+  const [username, setUsername] = useState(0);
+  useEffect(() => {
+    fetch('http://localhost:3001/api')
+      .then(res=>res.json())
+      .then(data=>setUsername(data.username));
+  })
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        {username ? `Hello ${username}` : 'Hello World'}
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+
+STEP 3. 모듈을 설치하고 `server.js`를 작성합니다. 
+
+```
+npm install npm-run-all express body-parser cors --save-prod 
+```
+`server.js`
+```js
+const express = require('express');
+const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const port = process.env.PORT || 3001;
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use('/api', (req, res)=> res.json({username:'bryan'}));
+
+app.listen(port, ()=>{
+    console.log(`express is running on ${port}`);
+})
+```
+
+STEP 4. `package.json`을 수정합니다.
+```
+  "scripts": {
+    "start": "npm-run-all --parallel start:**",
+    "start:client": "react-scripts start",
+    "start:server": "node ./server/server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+```
+
+
+
+
 ---
 
 
