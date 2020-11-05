@@ -4,6 +4,16 @@
 ...
 
 ## PROCESS
+STEP 1. `create-react-app`으로 프로젝트를 생성합니다.
+```bash
+npx create-react-app project-name --template typescript
+cd project-name
+npm start
+```
+
+---
+
+
 STEP 1. 노드 프로젝트를 초기화하고 `package.json`를 수정합니다.
 
 ```bash
@@ -76,7 +86,7 @@ app.listen(PORT, () => {
 });
 ```
 
-STEP 6. `*.handlebars`를 작성합니다.
+STEP 6. `*.handlebars`를 작성합니다. (에러 페이지를 추가해야 합니다만.)
 
 `index.handlebars`
 ```handlebars
@@ -95,3 +105,5 @@ STEP 6. `*.handlebars`를 작성합니다.
 </body>
 </html>
 ```
+
+
