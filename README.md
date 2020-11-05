@@ -9,10 +9,9 @@ npm init
 package.json
 ```json
 {
-	...
-	"scripts": {
-		"start": "nodemon ./development/index.ts"
-	},
+  "scripts": {
+    "start": "nodemon ./development/index.ts"
+  },
 	"author": "Lee Geun Il",
 	"license": "MIT"
 }
@@ -33,9 +32,7 @@ tsc --init
 tsconfig.json
 ```json
 {
-  "compilerOptions": {
-    ...
-  },
+  "compilerOptions": {},
   "include": [
     "./development/**/*",
   ]
