@@ -24,7 +24,7 @@ npm init
 STEP 2. 모듈을 설치합니다.
 ```bash
 npm install express --save-prod
-npm install nodemon typescript ts-node @types/node @types/express --save-dev
+npm install nodemon handlebars typescript ts-node @types/node @types/express --save-dev
 ```
 
 STEP 3. 타입스크립트 컴파일러를 초기화하고 `tsconfig.json`를 수정합니다.
