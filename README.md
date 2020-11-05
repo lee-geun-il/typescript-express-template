@@ -1,7 +1,9 @@
 # typescript-express-template
- This is a template for TypesSript and Express
 
+## HOW TO
+...
 
+## PROCESS
 STEP 1. 노드 프로젝트를 초기화하고 `package.json`를 수정합니다.
 
 ```bash
