@@ -7,7 +7,7 @@ STEP 1. Initialize a Node.js project.
 npm init
 ```
 package.json
-```
+```json
 {
 	...
 	"scripts": {
@@ -21,17 +21,17 @@ package.json
 
 
 STEP 2. Install modules.
-```
+```bash
 npm install express --save-prod
 npm install nodemon typescript ts-node @types/node @types/express --save-dev
 ```
 
 STEP 3. Initialize the TypeScript compiler.
-```
+```bash
 tsc --init
 ```
 tsconfig.json
-```
+```json
 {
   "compilerOptions": {
     ...
