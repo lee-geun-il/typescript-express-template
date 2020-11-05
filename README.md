@@ -4,7 +4,7 @@
 ...
 
 ## PROCESS
-STEP 1. `create-react-app`으로 프로젝트를 생성합니다.
+STEP 1. **Create React App**으로 프로젝트를 생성합니다.
 ```bash
 npx create-react-app project-name --template typescript
 cd project-name
